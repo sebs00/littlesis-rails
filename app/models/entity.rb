@@ -831,6 +831,10 @@ class Entity < ApplicationRecord
     end
   end
 
+  def fec_donors
+    FECDonorQuery.new(self)
+  end
+
   ##
   # Private helper methods
   #
